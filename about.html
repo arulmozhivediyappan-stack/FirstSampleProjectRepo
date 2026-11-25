@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+<style>
+    #our-story {
+      
+ background:#ffffff;
+    padding:80px 70px;
+    }
+    #our-story > article {
+        display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    padding: 80px 70px;
+    }
+    .arti-img{
+    width:600px;
+    height:400px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(24, 21, 21, 0.12);
+}
+
+/* Right Content */
+
+.story-content{
+    width:520px;
+}
+
+/* Small Heading */
+
+.story-content small{
+    color:#ff6b35;
+    font-size:30px;
+    font-weight:800;
+  font-family: "Alex Brush", cursive;
+}
+.story-content h3{
+    font-size:40px;
+    color: #222;
+    line-height: 58px;
+    margin:8px 0 20px;
+}
+.story-content h3 span{
+    color:#ff6b35;
+    font-family: "Alex Brush", cursive;
+    font-size:56px;
+    font-weight:400;
+}
+.story-content p{
+    color:#666;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:18px;
+}
+.story-features{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+.story-features article{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.story-icon{
+    height: 58px;
+    width: 58px;
+     border-radius:50%;
+    background:#fff2ea;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.story-features article img{
+    border-radius:50%;
+    background:#fff2ea;
+    height:26px;
+    width:26px;
+   
+}
+.story-features h4{
+    font-size:15px;
+    color:#222;
+    margin-bottom:2px;
+}
+.story-features article p{
+    margin:0;
+    font-size:14px;
+    color:#555;
+    line-height:20px;
+}
+
+#mission-vision{
+    background:#fff2ea;
+    padding:0px 70px;
+}
+#mission-vision h2{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    color:#222222;
+    margin-bottom:50px;
+    position:relative;
+}
+#mission-vision h2::after{
+    content:"";
+  display:block;
+  width:70px;
+    height:4px;
+    background:#ff6b00;
+    margin: 12px auto 0;
+
+}
+#mission-vision>div{
+    display:flex;
+    justify-content:center;
+}
+#mission-vision article{
+  flex:1;
+  display:flex;
+  align-items:center;
+    gap:20px;
+    background:#fff9f4;
+    padding:35px;
+    border: 1px solid #ffe5d2;
+}
+#mission-vision article:first-child{
+   border-right: none;
+   border-radius: 15px 0 0 15px;
+}
+#mission-vision article:last-child{
+   border-radius: 0 15px 15px 0;
+}
+#mission-vision article:last-child{
+    border-left: 1px solid #ffe5d2;
+}
+
+#mission-vision article img{
+    width: 65px;
+    height: 65px;
+    background: #fff1e6;
+    border-radius: 50%;
+    padding: 10px;  
+    box-sizing: border-box;
+    
+}
+#mission-vision article h3{
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+#mission-vision article p{
+    font-size: 16px;
+    color: #555;
+    line-height: 26px;
+}
+
+#chefs{
+    background:#fff;
+    padding:80px 70px;
+    text-align:center;
+}
+
+#chefs small{
+    display:block;
+    color:#ff6b35;
+    font-size:30px;
+    font-weight:400;
+  font-family: "Alex Brush", cursive;
+  margin-bottom:5px;
+}
+
+#chefs h2{
+    font-size:40px;
+    color:#222;
+    font-weight:700;
+    margin-bottom:50px;
+}
+#chefs h2 span{
+    color:#ff6b35;
+    font-family: "Alex Brush", cursive;
+    font-size:52px;
+    font-weight:400;
+}
+#chefs>div{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+/* Chef Card */
+
+#chefs article{
+    width:340px;
+    background:#ffffff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    padding-bottom:25px;
+}
+
+/* Chef Image */
+
+#chefs article>img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Chef Name */
+
+#chefs article h3{
+    font-size:24px;
+    color:#222222;
+    margin:18px 0 6px;
+}
+
+/* Designation */
+#chefs article h4{
+    font-size:16px;
+    color:#ff6b00;
+    margin-bottom:15px;
+}
+#chefs article p{
+    font-size:15px;
+    color:#555;
+    line-height:26px;
+    padding:0 25px;
+    margin-bottom:22px;
+}
+.chef-social{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.chef-social img{
+    width: 20px;
+    height: 20px;
+}
+#statistics{
+    background: #ffffff;
+    padding: 0 70px;
+}
+#statistics h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+#statistics h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #ff6b00;
+    margin: 12px auto 0;
+}
+
+#statistics div{
+    display: flex;
+    justify-content: center;
+    background: #1d1d1d;
+    border-radius: 16px;
+    overflow: hidden;
+}
+#statistics article{
+    flex:1;
+    text-align: center;
+    padding: 35px 20px;
+    border-right: 1px solid black;
+}
+#statistics article:last-child{
+    border-right: none;
+}
+#statistics article img{
+    height: 42px;
+    width: 42px;
+    margin-bottom: 15px;
+    background-color: #0d0d0d;
+}
+#statistics article img {
+  filter: invert(1) hue-rotate(180deg);
+}
+#statistics article h3{
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+#statistics article p{
+    font-size: 16px;
+    color: #d1c7c7;
+    margin: 0;
+}
+</style>
+
+
+</head>
+<body>
+	
+<section id="about-hero">
+    <div class="hero-content">
+        <h2>About BiteBox</h2>
+        <p> Serving Happiness Since 2025 </p>
+    </div>
+</section>
+
+    <section id="our-story">
+        <article>
+<img class="arti-img" src="https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?cs=srgb&dl=pexels-amar-saleem-70441.jpg&fm=jpg" alt="restaurant" width="500">
+    
+   <div class="story-content">
+    <small>Our Story</small>
+
+    <h3> Every Meal Has
+        <span>A Story</span>
+    </h3>
+
+    <p> BiteBox was founded with a simple goal —
+        to serve fresh, delicious food using quality
+        ingredients and authentic recipes.
+    </p>
+
+    <p> What started as a small kitchen has now
+        grown into a trusted food destination loved
+        by thousands of happy customers.
+    </p>
+<div class="story-features">
+
+        <article>
+            <div class="story-icon">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/674/774/original/leaf-icon-design-template-simple-and-clean-free-vector.jpg" width="45">
+           </div>
+           
+            <div>
+                    <h4>Fresh</h4>
+                    <p>Ingredients</p>
+            </div>
+        </article>
+
+        <article>
+             <div class="story-icon">
+            <img src="https://static.vecteezy.com/system/resources/previews/052/879/794/large_2x/love-symbol-design-free-png.png" width="45">
+          </div>
+          
+            <div>
+                    <h4>Made</h4>
+                    <p> with Passion </p>
+            </div>
+        </article>
+
+        <article>
+                <div class="story-icon">    
+            <img src="https://media.istockphoto.com/id/1138015674/vector/user-icon-vector-people-symbol-vector.jpg?s=170667a&w=0&k=20&c=c2pN_tD1FxXulaZb9vnIEIX4zkXorep8HhAvYeT6ynw=" width="45">
+                </div>
+            
+                <div>
+                    <h4>Loved</h4>
+                    <p>by Thousands</p>
+            </div>
+        </article>
+
+    </div>
+    </div> 
+</article>
+    </section>
+
+    <section id="mission-vision">
+    <h2>Our Mission & Vision</h2>
+    <div>
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.kxvpStbVziGP6rs67mLHLQHaHa?w=158&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+
+            <div>
+
+                    <h3>Our Mission</h3>
+                    <p> To serve fresh, delicious, and high-quality meals
+                        prepared with the finest ingredients while providing
+                        exceptional customer service and memorable dining
+                        experiences.
+                    </p>
+            </div>
+        </article>
+        <article>
+            <img src="data:image/webp;base64,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" alt="">
+            <div>
+                <h3>Our Vision</h3>
+                <p> To become the most trusted and loved restaurant by
+                    continuously delivering innovative flavors, outstanding
+                    hospitality, and a welcoming environment for every guest.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- our chefs -->
+<section id="chefs">
+       <small> Meet Our Chefs</small>
+       <h2>The people behind <span> the flavour</span></h2>
+        <div>
+            <article>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.uDrXP8dS3DRRbl9i-Pwc3AHaEH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="250">
+                <h3>Chef Arjun Kapoor</h3>
+                <h4>Head Chef</h4>
+                <p> Specializes in Italian cuisine with
+                    10+ years of experience.
+                </p>
+                <div class="chef-social">
+                    <img src="https://th.bing.com/th/id/R.150632bbcd1eede1f373795b2f807305?rik=xiMhIMYTEL1qYQ&riu=http%3a%2f%2fclipart-library.com%2fdata_images%2f53954.jpg&ehk=l4ap5jMMADmTXlzTPoZ9bOsSjlK%2fSP%2bJcdVwdCvG8IQ%3d&risl=&pid=ImgRaw&r=0" width="30">
+                    <img src="https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739335_1280.jpg" width="30">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.H836RvDYYgQZcZn0TC8qBAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="30">
+                </div>
+            </article>
+
+            <article>
+               <img src="https://tse1.mm.bing.net/th/id/OIP.uDrXP8dS3DRRbl9i-Pwc3AHaEH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="250">
+                <h3>Chef Neha Sharma</h3>
+                <h4>Sous Chef</h4>
+
+ <p> Expert in continental and fusion
+                    dishes with a creative touch.
+                </p>
+
+                 <div class="chef-social">
+                    <img src="https://th.bing.com/th/id/R.150632bbcd1eede1f373795b2f807305?rik=xiMhIMYTEL1qYQ&riu=http%3a%2f%2fclipart-library.com%2fdata_images%2f53954.jpg&ehk=l4ap5jMMADmTXlzTPoZ9bOsSjlK%2fSP%2bJcdVwdCvG8IQ%3d&risl=&pid=ImgRaw&r=0" width="30">
+                    <img src="https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739335_1280.jpg" width="30">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.H836RvDYYgQZcZn0TC8qBAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="30">
+                </div>
+            </article>
+
+            <article>
+               <img src="https://tse1.mm.bing.net/th/id/OIP.uDrXP8dS3DRRbl9i-Pwc3AHaEH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="250">
+                <h3>Chef Rohan Mehta</h3>
+                <h4>Pizza Specialist</h4>
+                <p> Pizza artisan bringing authentic
+                    flavors to every bite.
+                </p>
+
+              <div class="chef-social">
+                    <img src="https://th.bing.com/th/id/R.150632bbcd1eede1f373795b2f807305?rik=xiMhIMYTEL1qYQ&riu=http%3a%2f%2fclipart-library.com%2fdata_images%2f53954.jpg&ehk=l4ap5jMMADmTXlzTPoZ9bOsSjlK%2fSP%2bJcdVwdCvG8IQ%3d&risl=&pid=ImgRaw&r=0">
+                    <img src="https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739335_1280.jpg" >
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.H836RvDYYgQZcZn0TC8qBAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" >
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- satistics -->
+     <section id="statistics">
+    <h2>Restaurant Statistics</h2>
+    <div>
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.zUIp62LL7HoqbnKV9LXpegHaHa?w=166&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+            <h3>100+</h3>
+            <p>menus items</p>
+        </article>
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.zDOF4m_C2O-TVqL--gM0RQHaHa?w=196&h=196&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+            <h3>50K+</h3>
+            <p>Happy Customers</p>
+        </article>
+        <article>
+            <img src="https://i.pinimg.com/originals/42/96/3d/42963dfff52e470be27f79bbe635f8c6.png" alt="">
+            <h3>25+</h3>
+            <p>Expert chefs</p>
+        </article>
+        <article>
+            <img src="https://static.vecteezy.com/system/resources/previews/081/864/195/non_2x/orange-star-outline-icon-for-rating-quality-and-recognition-symbol-in-design-vector.jpg" alt="">
+            <h3>4.8</h3>
+            <p>Customer rating</p>
+        </article>
+    </div>
+</section>
+
+</body>
+</html>
